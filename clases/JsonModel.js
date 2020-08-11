@@ -8,7 +8,7 @@ class JsonModel {
   }
 
   readFile(){
-    return JSON.parse(fs.readFileSync(path.resolve(`${__dirname}/../data/${this.fileName}`), 'utf-8'));
+    return JSON.parse(fs.readFileSync(path.resolve(`${__dirname}/../data/${this.fileName}.json`), 'utf-8'));
   }
   
 }
